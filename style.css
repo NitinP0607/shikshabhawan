@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nata+Sans:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+/*Navbar*/
+.main-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+.content .welcome {
+  font-size: 5rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.quotes p {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  animation: fade 1s ease-in-out;
+}
+
+#quote-text {
+  transition: opacity 0.8s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.quotes {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(14, 30, 122, 0.5); /* 50% black overlay */
+  z-index: -1;
+}
+@media screen and (max-width: 1368px) {
+  .background-video {
+    height: auto;
+    width: 100%;
+  }
+  .content .welcome {
+    font-size: 2rem;
+  }
+}
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(104, 103, 103);
+  border: none;
+}
+/* Navbar */
+
+.navbar {
+  position: absolute; /* Use 'fixed' if you want it to stick while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: grey;
+  z-index: 10;
+  padding: 0px 20px;
+}
+
+.logo img {
+  width: 150px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    background-color: white;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-links li a {
+    color: black;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    color: aliceblue;
+  }
+}
+
+/* home section */
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.connect-history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+.history {
+  width: 50%;
+}
+.history-text {
+  color: rgb(102, 99, 99);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 1.5;
+}
+.connect-history h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  width: 30%;
+  padding: 10px;
+  color: rgb(104, 104, 104);
+}
+.numbers-teacher {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(44, 170, 122);
+  padding: 10px;
+}
+.numbers-students {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(44, 170, 122);
+  padding: 10px;
+}
+.text-with-img-for-home-page {
+  display: flex;
+  flex-direction: column;
+}
+.home-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+/* first image */
+.left-img {
+  width: 40%;
+  padding: 10px;
+}
+.left-img img {
+  width: 100%;
+  padding: 20px;
+}
+
+.right-text {
+  width: 50%;
+  padding: 10px;
+}
+.right-text p {
+  width: 100%;
+  color: rgb(102, 99, 99);
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+/* Second image */
+.right-img {
+  width: 40%;
+  padding: 10px;
+}
+.right-img img {
+  width: 100%;
+  padding: 20px;
+}
+.left-text {
+  width: 50%;
+  padding: 10px;
+}
+.left-text p {
+  width: 100%;
+  color: rgb(102, 99, 99);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 10px;
+}
+.right-img-small {
+  display: none;
+}
+.right-img-small img {
+  padding: 20px;
+}
+@media screen and (max-width: 480px) {
+  .history-text,
+  .right-text p,
+  .left-text p {
+    font-size: 1rem;
+  }
+
+  .numbers-teacher,
+  .numbers-students {
+    font-size: 1.2rem;
+  }
+
+  .connect-history {
+    padding: 10px 5px;
+  }
+  .right-img-small {
+    display: block;
+  }
+  .right-img-small img {
+    width: 100%;
+  }
+  .right-img-small {
+    display: block;
+  }
+  .right-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .connect-history {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .connect-history h2,
+  .history {
+    width: 100%;
+  }
+
+  .history-text,
+  .right-text p,
+  .left-text p {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .numbers-teacher,
+  .numbers-students {
+    font-size: 1.5rem;
+  }
+
+  .left-img img,
+  .right-img img {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .left-img,
+  .right-img,
+  .left-text,
+  .right-text {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .left-img img,
+  .right-img img {
+    padding: 10px;
+  }
+  .right-img-small {
+    display: block;
+  }
+  .right-img-small img {
+    width: 100%;
+  }
+  .right-img-small {
+    display: block;
+  }
+  .right-img {
+    display: none;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #353535;
+  color: rgb(252, 252, 252);
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #888a89;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #757474;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.social-icons a {
+  color: rgb(112, 112, 112);
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #ececec;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+
+/* COnnect Page style */
+.top-connect {
+  width: 100%;
+  height: 190px;
+  background-image: url(./public/onnects.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(182, 100, 100);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.top-connect h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+.page-back-connect{
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+.page-back-connect li{
+  list-style: none;
+}
+.page-back-connect li a{
+  text-decoration: none;
+  color: #d36868;
+
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #d36868;
+
+}
+.connect-page {
+  padding: 50px 20px;
+  background: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.connect-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.connect-container h1 {
+  color: #134577;
+  font-size: 2.5rem;
+}
+
+.connect-container p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.connect-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.connect-form {
+  flex: 1 1 400px;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.connect-form input,
+.connect-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.connect-form button {
+  width: 100%;
+  padding: 12px;
+  background: #134577;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.connect-form button:hover {
+  background: #0f365c;
+}
+
+.connect-info {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.connect-info h3 {
+  margin-bottom: 15px;
+  color: #134577;
+}
+
+.connect-info p {
+  margin-bottom: 10px;
+  color: #797878;
+}
+
+.connect-info i {
+  margin-right: 8px;
+  color: #000000;
+}
+
+.social-icons a i {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-right: 10px;
+}
+
+.social-icons a i:hover {
+  color: #c4c4c4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .connect-content {
+    flex-direction: column;
+  }
+}
