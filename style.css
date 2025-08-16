@@ -7,8 +7,10 @@
   font-family: "Roboto", sans-serif;
   user-select: none;
 }
+html,
 body {
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden; /* remove horizontal scroll */
 }
 
 /*Navbar*/
@@ -189,7 +191,6 @@ hr {
     width: 100px;
   }
 }
-
 
 /* home section */
 
@@ -513,12 +514,13 @@ hr {
     justify-content: center;
   }
 }
-/* 3 Connect.html Page */
+/* 3 About.html Page */
 .connect-header {
   text-align: center;
+  width: 100%;
   padding: 40px 10px;
-  background-color: #4b4b4b;
-  color: #a7a7a7;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: #161616;
 }
 
 .connect-header h1 {
@@ -531,6 +533,21 @@ hr {
   max-width: 700px;
   margin: auto;
   line-height: 1.6;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #fff;
+  color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
 }
 
 .connect-section {
@@ -546,7 +563,8 @@ hr {
 
 .connect-info,
 .connect-form {
-  flex: 1 1 400px;
+  flex: 1 1 300px; /* smaller min-width */
+  max-width: 100%;
   background: #fff;
   padding: 25px;
   border-radius: 10px;
@@ -556,17 +574,19 @@ hr {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: #00c6ff;
 }
 
 .connect-info h2,
 .connect-form h2 {
   margin-bottom: 15px;
-  color: #222;
+  color: rgb(209, 93, 157);
 }
 
 .connect-info p {
   margin: 10px 0;
-  color: #444;
+  color: #141414;
+  font-size: 20px;
 }
 
 .connect-info i {
@@ -590,7 +610,7 @@ hr {
 }
 
 .connect-form button {
-  background: #292823;
+  background: #3a56a3;
   border: none;
   padding: 12px 20px;
   font-size: 16px;
@@ -615,7 +635,7 @@ hr {
   font-size: 35px;
   padding: 20px 30px;
   text-align: center;
-  color: #4d4d4d;
+  color: #2b6d81;
   font-weight: 800;
 }
 .connection {
@@ -639,7 +659,7 @@ hr {
   font-size: 20px;
   text-align: center;
   font-weight: 500;
-  color: #4d4d4d;
+  color: #2c3588;
 }
 
 /* Responsive */
@@ -661,10 +681,11 @@ hr {
 }
 @media (max-width: 480px) {
   .links ul {
+    width: 100%;
     display: flex;
   }
   .links ul li {
-    padding: 15px;
+    padding: 10px;
   }
   .connections p {
     width: 100%;

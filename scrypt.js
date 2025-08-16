@@ -4,7 +4,7 @@
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
-  
+
 const quotes = [
   "Teaching is the one profession that creates all other professions",
   "Education is the most powerful weapon which you can use to change the world",
@@ -26,3 +26,16 @@ function changeQuote() {
 }
 
 setInterval(changeQuote, 4000);
+
+
+function showForm(type) {
+  // Hide all forms
+  document.querySelectorAll(".form").forEach(f => f.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+
+  // Show selected form
+  document.getElementById(type + "-form").classList.add("active");
+
+  // Highlight selected tab
+  event.target.classList.add("active");
+}
