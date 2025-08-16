@@ -574,13 +574,13 @@ hr {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #00c6ff;
+  background-color: #92bfcc;
 }
 
 .connect-info h2,
 .connect-form h2 {
   margin-bottom: 15px;
-  color: rgb(209, 93, 157);
+  color: rgb(76, 76, 77);
 }
 
 .connect-info p {

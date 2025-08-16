@@ -303,6 +303,7 @@ hr {
   .footer-container {
     flex-direction: column;
     gap: 20px;
+    width: 100%;;
   }
   .links ul {
     flex-direction: row;
