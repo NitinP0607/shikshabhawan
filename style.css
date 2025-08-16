@@ -124,7 +124,7 @@ hr {
   cursor: pointer;
 }
 
-.navbar ul{
+.navbar ul {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -144,37 +144,52 @@ hr {
 .menu-toggle {
   display: none;
   font-size: 24px;
-  color: white;
   cursor: pointer;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .nav-links {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: absolute;
-    top: 100px;
+    top: 70px;
     right: 0px;
     background-color: white;
-    flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     padding: 20px;
-    border-radius: 8px;
+    height: 60vh;
+    width: 150px;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* when .show is added */
+  .nav-links.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .nav-links li a {
     color: black;
+    font-size: 18px;
   }
 
-  .nav-links.show {
-    display: flex;
-  }
   .menu-toggle {
     display: block;
     color: aliceblue;
+    font-size: 28px;
+    cursor: pointer;
   }
+
   .logo img {
     width: 100px;
   }
 }
+
 
 /* home section */
 
@@ -344,7 +359,7 @@ hr {
   .left-text,
   .right-text {
     width: 100%;
-    padding: 0 10px;
+    padding: 10px 10px;
   }
 
   .left-img img,
@@ -385,7 +400,7 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-hr{
+hr {
   width: 100%;
   height: 2px;
   background-color: rgb(104, 103, 103);
@@ -590,7 +605,7 @@ hr{
 }
 
 .connections {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -616,7 +631,7 @@ hr{
   padding: 10px;
   transition: transform 0.2s ease-in-out;
 }
-.testinomials img:hover{
+.testinomials img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -632,19 +647,17 @@ hr{
   .connect-container {
     flex-direction: column;
   }
-  .connection{
+  .connection {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
   }
-   .connections p {
-  width: 100%;
-  font-size: 20px;
-  padding: 30px 40px;
-  font-weight: 400;
-}
-  
+  .connections p {
+    width: 100%;
+    font-size: 20px;
+    padding: 30px 40px;
+    font-weight: 400;
+  }
 }
 @media (max-width: 480px) {
   .links ul {
@@ -653,17 +666,16 @@ hr{
   .links ul li {
     padding: 15px;
   }
- .connections p {
-  width: 100%;
-  font-size: 20px;
-  padding: 20px 10px;
-  font-weight: 400;
-}
+  .connections p {
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 10px;
+    font-weight: 400;
+  }
   .connection {
     flex-direction: column;
-    
   }
- 
+
   .testinomials {
     width: 100%;
   }
@@ -682,27 +694,26 @@ hr{
     width: 250px;
     height: 250px;
   }
-    .connection{
+  .connection {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
   }
-  .connect-container{
+  .connect-container {
     width: 100%;
   }
-   .connections p {
-  width: 100%;
-  font-size: 20px;
-  padding: 30px 40px;
-  font-weight: 400;
-}
-.connect-info,
-.connect-form {
-  width: 100%;
-  padding: 10px;
-}
-.connect-section {
-  padding: 10px;
-}
+  .connections p {
+    width: 100%;
+    font-size: 20px;
+    padding: 30px 40px;
+    font-weight: 400;
+  }
+  .connect-info,
+  .connect-form {
+    width: 100%;
+    padding: 10px;
+  }
+  .connect-section {
+    padding: 10px;
+  }
 }

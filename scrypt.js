@@ -1,17 +1,16 @@
-  const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-  toggle.addEventListener("click", () => {
+  menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
-
-
-  const quotes = [
+  
+const quotes = [
   "Teaching is the one profession that creates all other professions",
   "Education is the most powerful weapon which you can use to change the world",
   "The mind is not a vessel to be filled, but a fire to be kindled.",
   "Children must be taught how to think, not what to think",
-  "Learning is a treasure that will follow its owner everywhere"
+  "Learning is a treasure that will follow its owner everywhere",
 ];
 
 let index = 0;
