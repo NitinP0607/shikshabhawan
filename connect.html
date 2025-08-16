@@ -3,100 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Connect | SHIKSHABHAWAN</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./logo.png" />
-    <script
-      src="https://kit.fontawesome.com/0ac1014d80.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Connect With Us - Shiksha Bhawan</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="top-connect">
-        <h1>Connect us</h1>
-       <div class="page-back-connect">
-         <li><a href="index.html">Home</a></li>
-       >
-      <li><a href="connect.html">Connect</a></li>
-       </div>
-    </div>
-      
-    <!-- Connect Section -->
-    <section class="connect-page">
-      <div class="connect-container">
-        <h1>Connect With Us</h1>
+    <section class="connect-header">
+      <h1>Connect With Us</h1>
+      <p>
+        Have questions, feedback, or suggestions? We’re here to help you. Reach
+        out to us anytime, and our team will get back to you as soon as
+        possible.
+      </p>
+    </section>
+    <section class="connection-show">
+      <div class="connections">
         <p>
-          We’re here to answer your questions and help you connect with the
-          right teachers.
+          We're here to help you. Reach out to us anytime, and our team will get
+          back to you as soon as possible.
         </p>
 
-        <div class="connect-content">
-          <!-- Contact Form -->
-          <div class="connect-form">
-            <form action="/submit-query" method="POST">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                rows="5"
-                required
-              ></textarea>
-              <button type="submit">Send Message</button>
-            </form>
+        <div class="connection">
+         <div class="testinomials">
+           <img src="./public//students+teacher.jpg" alt="img error" />
+           <p>Large Community of tutors</p>
+         </div>
+          <div class="testinomials">
+            <img src="./public/students1.jpg" alt="img err" />
+            <p>Learning in a team</p>
           </div>
-
-          <!-- Contact Info -->
-          <div class="connect-info">
-            <h3>Contact Information</h3>
-            <p><i class="fas fa-envelope"></i> info@shikshabhawan.com</p>
-            <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
-            <p><i class="fas fa-map-marker-alt"></i> Kannauj, UP, India</p>
-
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+          <div class="testinomials">
+            <img src="./public/students+teacher2.jpg" alt="" />
+            <p>Improve Practical knowledge</p>
+          </div>
+          <div class="testinomials">
+            <img src="./public/sudents_girkls2.jpg" alt="img err">
+            <p>Extra Discounts for Girls</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
+    <section class="connect-section">
+      <div class="connect-container">
+        <!-- Right: Contact Form -->
+        <div class="connect-form">
+          <h2>Send Us a Message</h2>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <!-- Left: Contact Info -->
+        <div class="connect-info">
+          <h2>Get in Touch</h2>
+          <p>
+            We’d love to hear from you! Reach out with your queries,
+            suggestions, or feedback.
+          </p>
+          <p><i class="fas fa-envelope"></i> info@shikshabhawan.com</p>
+          <p><i class="fas fa-phone-alt"></i> +91 7607592310</p>
+          <p><i class="fas fa-map-marker-alt"></i> Kannauj, UP, India</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="footer-container">
-        <!-- About -->
-        <div class="footer-section about">
-          <h3>About SHIKSHABHAWAN</h3>
-          <p>
-            SHIKSHABHAWAN is a platform dedicated to connecting students with
-            experienced teachers, making learning accessible, engaging, and
-            effective.
-          </p>
-        </div>
-
         <!-- Quick Links -->
         <div class="footer-section links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#connect">Connect</a></li>
-            <li><a href="#forms">Forms</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="connect.html">Connect</a></li>
+            <li><a href="#forms.html">Forms</a></li>
+            <li><a href="#about.html">About us</a></li>
           </ul>
         </div>
 
@@ -119,10 +106,15 @@
           </div>
         </div>
       </div>
-
+      <hr>
       <div class="footer-bottom">
         <p>© 2025 SHIKSHABHAWAN. All rights reserved.</p>
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/0ac1014d80.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scrypt.js"></script>
   </body>
 </html>
