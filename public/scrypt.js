@@ -5,6 +5,11 @@
     navLinks.classList.toggle("show");
   });
 
+  document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
 const quotes = [
   "Teaching is the one profession that creates all other professions",
   "Education is the most powerful weapon which you can use to change the world",
