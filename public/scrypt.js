@@ -44,3 +44,23 @@ function showForm(type) {
   // Highlight selected tab
   event.target.classList.add("active");
 }
+
+// Pop-up form
+
+window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      document.getElementById("join-modal").style.display = "flex";
+    }, 2000);
+  });
+
+  // Close modal on X click
+  document.getElementById("close-modal").addEventListener("click", () => {
+    document.getElementById("join-modal").style.display = "none";
+  });
+
+  // Optional: handle form submission
+  document.getElementById("join-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you for joining!");
+    document.getElementById("join-modal").style.display = "none";
+  });
