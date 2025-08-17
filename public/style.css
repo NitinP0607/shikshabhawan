@@ -153,7 +153,6 @@ hr {
   .nav-links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     position: absolute;
     top: 70px;
     right: 0px;
