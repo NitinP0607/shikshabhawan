@@ -153,7 +153,7 @@ hr {
   .nav-links {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 0px;
@@ -230,12 +230,14 @@ hr {
   font-weight: 600;
   color: rgb(44, 170, 122);
   padding: 10px;
+  text-align: center;
 }
 .numbers-students {
   font-size: 2rem;
   font-weight: 600;
   color: rgb(44, 170, 122);
   padding: 10px;
+  text-align: center;
 }
 .text-with-img-for-home-page {
   display: flex;
@@ -325,7 +327,6 @@ hr {
 @media screen and (max-width: 768px) {
   .connect-history {
     flex-direction: column;
-    text-align: center;
     gap: 20px;
   }
 
