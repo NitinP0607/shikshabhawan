@@ -730,8 +730,9 @@ hr {
   max-width: 220px;
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  border: 2px solid #ddd;
+  border-radius: 50%;
+  border: none;
+  outline: none;
 }
 
 /* Responsive */
