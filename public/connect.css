@@ -8,16 +8,20 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #f4f6f9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 .conns {
+    flex: 1;
   padding: 50px;
   width: 100%;
   display: flex;
@@ -232,103 +236,5 @@ button:hover {
   button {
     font-size: 15px;
     padding: 10px;
-  }
-}
-/* footer */
-.footer {
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-}
-.footer-section {
-  text-align: left;
-}
-.footer-section h3 {
-  margin-bottom: 10px;
-  color: #fff;
-}
-.links ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-.links ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.links ul li {
-  padding: 10px;
-}
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.contact p {
-  color: #ccc;
-}
-.social-icons {
-  display: flex;
-  gap: 12px;
-}
-.social-icons a {
-  color: #080808;
-  font-size: 20px;
-  transition: 0.3s;
-}
-.social-icons a:hover {
-  color: #fff;
-}
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  color: #ccc;
-}
-hr {
-  display: none;
-}
-.footer-bottom p{
-    text-align: center;
-    color: #b8b0b0;
-  }
-
-@media (max-width: 480px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;;
-  }
-  .links ul {
-    flex-direction: row;
-    gap: 10px;
-    border-bottom: #b8b0b0;
-  }
-  hr {
-    display: block;
-  }
-  .contact{
-    justify-content: center;
-  }
-  .social {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
-  .social-icons {
-    justify-content: center;
-    align-items: center;
-  }
-  .footer-bottom p{
-    text-align: center;
-    color: #b8b0b0;
   }
 }
