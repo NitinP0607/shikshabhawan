@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 20px;
 }
 .contact p {
   color: #ccc;
@@ -59,16 +60,16 @@
 hr {
   display: none;
 }
-.footer-bottom p{
-    text-align: center;
-    color: #b8b0b0;
-  }
+.footer-bottom p {
+  text-align: center;
+  color: #b8b0b0;
+}
 
 @media (max-width: 480px) {
   .footer-container {
     flex-direction: column;
     gap: 20px;
-    width: 100%;;
+    width: 100%;
   }
   .links ul {
     flex-direction: row;
@@ -78,7 +79,7 @@ hr {
   hr {
     display: block;
   }
-  .contact{
+  .contact {
     justify-content: center;
   }
   .social {
@@ -89,10 +90,11 @@ hr {
     padding: 15px;
   }
   .social-icons {
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
   }
-  .footer-bottom p{
+  .footer-bottom p {
     text-align: center;
     color: #b8b0b0;
   }
