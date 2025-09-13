@@ -512,7 +512,7 @@ hr {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #92bfcc;
+  background-color: #dadbdb;
 }
 
 .connect-info h2,
@@ -577,7 +577,7 @@ hr {
   font-size: 35px;
   padding: 20px 30px;
   text-align: center;
-  color: #2b6d81;
+  color: #6b7679;
   font-weight: 800;
 }
 .connection {
@@ -601,7 +601,7 @@ hr {
   font-size: 20px;
   text-align: center;
   font-weight: 500;
-  color: #2c3588;
+  color: #626269;
 }
 
 /* Responsive */
@@ -697,7 +697,7 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   flex-wrap: wrap; /* allows stacking on smaller screens */
 }
@@ -711,13 +711,13 @@ hr {
 .owner-bio h3 {
   font-size: 22px;
   margin-bottom: 10px;
-  color: #0077b6;
+  color: #797979;
 }
 
 .owner-bio p {
   font-size: 16px;
   line-height: 1.6;
-  color: #444;
+  color: #6c7173;
 }
 
 .img-owner {
