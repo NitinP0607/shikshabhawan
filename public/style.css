@@ -531,9 +531,13 @@ hr {
   margin-right: 8px;
   color: #000000;
 }
+.social-links {
+  padding: 20px 0px;
+  font-size: 25px;
+}
 
-.social-links a:hover {
-  color: #525252;
+.social-links a i:hover {
+  color: #8b8a8a;
 }
 
 /* Form */
