@@ -480,76 +480,98 @@ hr {
 }
 .home-bottom-enquiries {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 10px 40px;
-  width: 100%;
+ padding: 0px 30px;
 }
+
 .enquiry {
-  width: 350px;
-  height: 450px;
-  border-radius: 5px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
-.enquiry:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+/* Image container */
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.enquiry img {
-  width: 350px;
-  height: 300px;
+
+.img-container img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.overlay-enquiry-card {
+
+/* Overlay text */
+.img-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
   color: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-size: 16px;
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-  border-radius: 8px;
+  transition: opacity 0.3s ease;
 }
-.enquiry:hover .overlay-enquiry-card{
-  opacity: 1;
-  pointer-events: auto;
-}
-.enquiry:hover .overlay-enquiry-card span {
-   transform: translateY(0);
+
+.img-container:hover .img-overlay {
   opacity: 1;
 }
+
+/* Heading & description */
 .enquiry h3 {
-  text-align: left;
-  padding: 10px;
-  font-size: 25px;
-  color: #636161;
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #333;
 }
+
 .enquiry p {
-  text-align: left;
-  padding: 10px;
-  font-size: 20px;
-  color: #252525;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 60px; /* leave space for button */
 }
+
+/* Button */
 .enquiry a {
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
-  color: #f7f7f7;
-  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
   width: 100%;
-  height: 10%;
-  background-color: #626269;
-  border-radius: 10px;
+  padding: 10px;
+  background: #85888b;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+  text-align: center;
 }
+
+.enquiry a:hover {
+  background: #b3b6b9;
+}
+
 /* 2 Footer section   */
 .footer {
   background: #222;
