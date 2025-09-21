@@ -25,22 +25,23 @@
   justify-content: center;
   align-items: center;
   width: 350px;
-  padding: 5px 50px;
+   background-color: #007bff;
+   border-radius: 25px;
 }
 .test-home {
-  background-color: #156b83;
+ 
   height: 45px;
   padding: 10px;
   border-top-left-radius: 30px; /* top-left corner */
   border-bottom-left-radius: 30px; /* bottom-left corner */
 }
 .test-about {
-  background-color: #093361;
+ 
   height: 45px;
   padding: 10px;
 }
 .test-connect {
-  background-color: #022833;
+  
   height: 45px;
   padding: 10px;
   border-top-right-radius: 30px; /* top-left corner */
@@ -51,18 +52,11 @@
   color: #f0eeee;
   font-size: 1.1rem;
 }
-.test-home:hover,
-.test-about:hover,
-.test-connect:hover {
-  cursor: pointer;
-  background-color: #8b8787;
-  transition: 0.3s;
-  color: white;
-}
+
 /* text styling */
 .hero-content {
   position: relative;
-  color: #4e4747;
+  color: #030303;
   text-align: center;
   max-width: 800px;
   padding: 0 20px;

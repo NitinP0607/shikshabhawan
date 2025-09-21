@@ -714,7 +714,7 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 0px 20px;
+ 
 }
 .cta-btn {
   display: inline-block;
@@ -737,10 +737,13 @@ hr {
   width: 350px;
   height: 45px;
   padding: 10;
+  background-color: #007bff;
+  border-radius: 25px;
+  
 }
 
 .about-home {
-  background-color: #156b83;
+  
   height: 45px;
   display: flex;
   justify-content: center;
@@ -750,7 +753,7 @@ hr {
   border-bottom-left-radius: 30px; /* bottom-left corner */
 }
 .about-connect {
-  background-color: #093361;
+  
   height: 45px;
   display: flex;
   justify-content: center;
@@ -758,7 +761,7 @@ hr {
   padding: 10px;
 }
 .about-test {
-  background-color: #022833;
+
   height: 45px;
   display: flex;
   justify-content: center;
@@ -769,16 +772,8 @@ hr {
 }
 .anc-home-about a {
   text-decoration: none;
-  color: #f0eeee;
+  color: #fdfeff;
   font-size: 1.1rem;
-}
-.about-connect:hover,
-.about-test:hover,
-.about-home:hover {
-  cursor: pointer;
-  background-color: #929292;
-  transition: 0.3s;
-  color: white;
 }
 
 .connect-header h1 {
