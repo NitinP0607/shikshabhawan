@@ -940,6 +940,7 @@ hr {
 
 
 .owner {
+  width: 100%;
   padding: 40px 10px;
   text-align: center;
   background: #f9f9f9;
@@ -1002,6 +1003,11 @@ hr {
   }
 
   .owner-bio {
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
   }
 }
