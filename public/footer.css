@@ -40,6 +40,10 @@
 .contact p {
   color: #ccc;
 }
+.contact p a{
+  text-decoration: none;
+  color: #ccc;
+}
 .social-icons {
   display: flex;
   gap: 12px;

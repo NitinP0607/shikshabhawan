@@ -146,6 +146,110 @@ p {
   line-height: 1.6;
 }
 
+/* Impact Section */
+.impact-section {
+  width: 100%;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 10px; /* Vertical padding with some side space on smaller screens */
+  font-family: 'Arial', sans-serif;
+}
+.impact-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;  
+}
+
+/* Heading */
+.impact-section h2 {
+  font-size: 2.5rem; /* Large font size for the heading */
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Paragraphs */
+.impact-section p {
+  font-size: 1.2rem; /* Slightly larger text for the paragraph */
+  color: #555; /* Lighter gray text for the paragraph */
+  line-height: 1.6; /* Increased line height for better readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+  margin-left: auto; /* Center-align the content */
+  margin-right: auto;
+}
+
+/* Strong Text */
+.impact-section strong {
+  font-weight: bold; /* Make the important text bold */
+  color: #43505e; /* Color the highlighted text blue */
+}
+
+/* Call-to-Action Button */
+.impact-section .cta-btn {
+  background-color: #3f556d; /* Blue background for the button */
+  color: white; /* White text color */
+  padding: 15px 30px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Button font size */
+  text-decoration: none; /* Remove underline from the link */
+  display: inline-block; /* Make the button inline */
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.impact-section .cta-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  text-decoration: none; /* Keep the button's text decoration unchanged */
+}
+
+.impact-section .cta-btn:active {
+  background-color: #003d80; /* Darkest blue on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust padding for smaller screens */
+  .impact-section {
+    padding: 30px 15px; /* Less padding on smaller screens */
+  }
+
+  /* Make the heading size smaller */
+  .impact-section h2 {
+    font-size: 2rem; /* Smaller heading for mobile */
+  }
+
+  /* Make paragraph font size slightly smaller */
+  .impact-section p {
+    font-size: 1rem; /* Smaller font size for better readability */
+    padding: 0 10px; /* Add some padding to avoid text touching edges */
+  }
+
+  /* Adjust button size and padding */
+  .impact-section .cta-btn {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    padding: 12px 25px; /* Slightly smaller padding */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens (e.g., phones in portrait mode) */
+  .impact-section h2 {
+    font-size: 1.8rem; /* Even smaller heading */
+  }
+
+  .impact-section p {
+    font-size: 0.9rem; /* Even smaller text */
+  }
+
+  .impact-section .cta-btn {
+    font-size: 0.85rem; /* Button text a bit smaller */
+    padding: 10px 20px; /* Smaller padding */
+  }
+}
+
+
+
 .cta-btn {
   display: inline-block;
   padding: 12px 25px;

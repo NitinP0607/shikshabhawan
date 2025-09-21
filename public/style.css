@@ -731,13 +731,13 @@ hr {
   background: #f1f1f1;
 }
 .anc-home-about {
+  background-color:  #007bff;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 350px;
   height: 45px;
   padding: 10;
-  background-color: #007bff;
   border-radius: 25px;
   
 }
@@ -753,7 +753,7 @@ hr {
   border-bottom-left-radius: 30px; /* bottom-left corner */
 }
 .about-connect {
-  
+  color: #007bff;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -761,7 +761,7 @@ hr {
   padding: 10px;
 }
 .about-test {
-
+ color: #007bff;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -772,7 +772,7 @@ hr {
 }
 .anc-home-about a {
   text-decoration: none;
-  color: #fdfeff;
+  color: #ffffff;
   font-size: 1.1rem;
 }
 
