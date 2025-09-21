@@ -636,35 +636,35 @@ hr {
   justify-content: center;
   align-items: center;
   width: 350px;
-  height: 55px;
-  padding: 5px 50px;
+  height: 45px;
+  padding: 10;
 }
 
 .about-home {
   background-color: #156b83;
-  height: 55px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 10px;
   border-top-left-radius: 30px; /* top-left corner */
   border-bottom-left-radius: 30px; /* bottom-left corner */
 }
 .about-connect {
   background-color: #093361;
-  height: 55px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
 }
 .about-test {
   background-color: #022833;
-  height: 55px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   border-top-right-radius: 30px; /* top-left corner */
   border-bottom-right-radius: 30px; /* bottom-left corner */
 }

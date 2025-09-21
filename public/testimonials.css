@@ -1,1 +1,189 @@
-!
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nata+Sans:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+.testimonials-hero {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: url("/assets/students+teacher.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+   background: rgba(3, 138, 131, 0.6);
+  
+}
+.anc-home-test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  padding: 5px 50px;
+}
+.test-home {
+  background-color: #156b83;
+  height: 45px;
+  padding: 10px;
+  border-top-left-radius: 30px; /* top-left corner */
+  border-bottom-left-radius: 30px; /* bottom-left corner */
+}
+.test-about {
+  background-color: #093361;
+  height: 45px;
+  padding: 10px;
+}
+.test-connect {
+  background-color: #022833;
+  height: 45px;
+  padding: 10px;
+  border-top-right-radius: 30px; /* top-left corner */
+  border-bottom-right-radius: 30px; /* bottom-left corner */
+}
+.anc-home-test a {
+  text-decoration: none;
+  color: #f0eeee;
+  font-size: 1.1rem;
+}
+.test-home:hover,
+.test-about:hover,
+.test-connect:hover {
+  cursor: pointer;
+  background-color: #8b8787;
+  transition: 0.3s;
+  color: white;
+}
+/* text styling */
+.hero-content {
+  position: relative;
+  color: #4e4747;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+  animation: fadeUp 1s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* fade-in effect */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .testimonials-hero {
+    height: 220px;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+.main-testimonial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 255);
+}
+.main-testimonial h2{
+    font-size: 40px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: rgb(76, 76, 77);
+}
+.info-us-cards{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.info-us-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    padding: 20px 30px;
+    background-color: #dadbdb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
+    transition: transform 0.3s ease, background-color 0.3s ease; /* smooth animation */
+}
+.info-us-card h3{
+    margin-bottom: 10px;
+    color: rgb(76, 76, 77);
+}
+.info-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    line-height: 1.5;
+}
+.info-us-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #d8d3d3;
+    
+}
+
+@media screen and (max-width: 480px){
+    .main-testimonial h2{
+        font-size: 30px;
+    }
+   .info-us-cards{
+    flex-direction: column;
+    padding: 10px;
+   } 
+   .info-us-card{
+    width: 100%;
+    padding: 30px 30px;
+   }
+} 
+@media screen and (max-width: 768px){
+   .info-us-cards{
+    flex-wrap: wrap;
+   } 
+}
+@media screen and (max-width: 1024px){
+    .info-us-cards{
+    flex-wrap: wrap;
+    gap: 40px;
+   } 
+}
