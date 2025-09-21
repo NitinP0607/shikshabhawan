@@ -614,99 +614,10 @@ hr {
   width: 100%;
 }
 
-/* 3 About.html Page */
-.connect-header {
-  text-align: center;
-  width: 100%;
-  padding: 40px 10px;
-  background: linear-gradient(to right, #007bff, #00c6ff);
-  color: #161616;
-}
-.connect-content{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px 20px;
-}
-.anc-home-about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 45px;
-  padding: 10;
-}
 
-.about-home {
-  background-color: #156b83;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-top-left-radius: 30px; /* top-left corner */
-  border-bottom-left-radius: 30px; /* bottom-left corner */
-}
-.about-connect {
-  background-color: #093361;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.about-test {
-  background-color: #022833;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-top-right-radius: 30px; /* top-left corner */
-  border-bottom-right-radius: 30px; /* bottom-left corner */
-}
-.anc-home-about a {
-  text-decoration: none;
-  color: #f0eeee;
-  font-size: 1.1rem;
-}
-.about-connect:hover,
-.about-test:hover,
-.about-home:hover {
-  cursor: pointer;
-  background-color: #929292;
-  transition: 0.3s;
-  color: white;
-}
-.connect-header h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
 
-.connect-header p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.6;
-}
 
-.cta-btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #fff;
-  color: #007bff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
 
-.cta-btn:hover {
-  background: #f1f1f1;
-}
 
 .connect-section {
   padding: 60px 20px;
@@ -785,6 +696,102 @@ hr {
 .connect-form button:hover {
   background: #838383;
 }
+/* About Page starts here */
+
+/* 3 About.html Page */
+
+.connect-header {
+  text-align: center;
+  width: 100%;
+  padding: 40px 10px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: #161616;
+}
+.connect-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 20px;
+}
+.cta-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #fff;
+  color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+}
+.anc-home-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 45px;
+  padding: 10;
+}
+
+.about-home {
+  background-color: #156b83;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-top-left-radius: 30px; /* top-left corner */
+  border-bottom-left-radius: 30px; /* bottom-left corner */
+}
+.about-connect {
+  background-color: #093361;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.about-test {
+  background-color: #022833;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-top-right-radius: 30px; /* top-left corner */
+  border-bottom-right-radius: 30px; /* bottom-left corner */
+}
+.anc-home-about a {
+  text-decoration: none;
+  color: #f0eeee;
+  font-size: 1.1rem;
+}
+.about-connect:hover,
+.about-test:hover,
+.about-home:hover {
+  cursor: pointer;
+  background-color: #929292;
+  transition: 0.3s;
+  color: white;
+}
+
+.connect-header h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.connect-header p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
 
 .connections {
   width: 100%;
@@ -804,7 +811,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
  
 }
 .testinomials {
@@ -816,9 +822,8 @@ hr {
 .testinomials img {
   width: 350px;
   display: block;
-  border-radius: 50%;
+  border-radius: 10%;
   height: 300px;
-  padding: 10px;
   transition: transform 0.2s ease-in-out;
 }
 .testinomials img:hover {
@@ -854,12 +859,11 @@ hr {
     flex-direction: column;
   }
   .connection {
-    flex-wrap: wrap;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
   }
   .connections p {
-    width: 100%;
     font-size: 20px;
     padding: 30px 40px;
     font-weight: 400;
@@ -891,9 +895,10 @@ hr {
 
   .testinomials {
     width: 100%;
+    
   }
   .testinomials img {
-    width: 350px;
+    width: 100%;
     height: 350px;
     padding: 0;
   }
@@ -902,7 +907,7 @@ hr {
     text-align: center;
   }
 }
-@media (max-width: 1080px) {
+/* @media (max-width: 1080px) {
   .testinomials img {
     width: 250px;
     height: 250px;
@@ -929,7 +934,9 @@ hr {
   .connect-section {
     padding: 10px;
   }
-}
+} */
+
+
 .owner {
   padding: 40px 10px;
   text-align: center;
