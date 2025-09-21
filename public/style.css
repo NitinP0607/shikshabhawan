@@ -609,7 +609,6 @@ hr {
 }
 @media screen and (max-width: 1024px) {
   .home-bottom-enquiries {
-    padding: 10px;
     gap: 10px;
   }
   .enquiry {
