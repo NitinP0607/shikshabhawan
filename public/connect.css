@@ -19,6 +19,10 @@ body {
 body {
   font-family: Arial, sans-serif;
   background: #f4f6f9;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 .conns {
   flex: 1;
@@ -85,8 +89,61 @@ p {
 
 .hero-content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 20px;
 }
-
+.anc-home-connect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  padding: 5px 50px;
+}
+.connect-home {
+  background-color: #156b83;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-top-left-radius: 30px; /* top-left corner */
+  border-bottom-left-radius: 30px; /* bottom-left corner */
+}
+.connect-about {
+  background-color: #093361;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.connect-test {
+  background-color: #022833;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-top-right-radius: 30px; /* top-left corner */
+  border-bottom-right-radius: 30px; /* bottom-left corner */
+}
+.anc-home-connect a {
+  text-decoration: none;
+  color: #f0eeee;
+  font-size: 1.1rem;
+}
+.connect-home:hover,
+.connect-about:hover,
+.connect-test:hover {
+  cursor: pointer;
+  background-color: #8b8787;
+  transition: 0.3s;
+  color: white;
+}
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
@@ -217,6 +274,10 @@ button:hover {
 /* Small Mobiles (<= 480px) */
 @media (max-width: 480px) {
   .hero {
+    width: 100%;
+    
+  }
+  .conns{
     width: 100%;
   }
   .hero h1 {

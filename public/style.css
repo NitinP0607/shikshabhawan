@@ -622,7 +622,65 @@ hr {
   background: linear-gradient(to right, #007bff, #00c6ff);
   color: #161616;
 }
+.connect-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 20px;
+}
+.anc-home-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 55px;
+  padding: 5px 50px;
+}
 
+.about-home {
+  background-color: #156b83;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-top-left-radius: 30px; /* top-left corner */
+  border-bottom-left-radius: 30px; /* bottom-left corner */
+}
+.about-connect {
+  background-color: #093361;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.about-test {
+  background-color: #022833;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-top-right-radius: 30px; /* top-left corner */
+  border-bottom-right-radius: 30px; /* bottom-left corner */
+}
+.anc-home-about a {
+  text-decoration: none;
+  color: #f0eeee;
+  font-size: 1.1rem;
+}
+.about-connect:hover,
+.about-test:hover,
+.about-home:hover {
+  cursor: pointer;
+  background-color: #929292;
+  transition: 0.3s;
+  color: white;
+}
 .connect-header h1 {
   font-size: 36px;
   margin-bottom: 15px;
