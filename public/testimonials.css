@@ -6,11 +6,12 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .testimonials-hero {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 450px;
   background: url("/assets/students+teacher.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -24,8 +25,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
-   background-color: #007bff;
+   width: 300px;
+   background-color: transparent;
    border-radius: 25px;
 }
 .test-home {
@@ -49,8 +50,9 @@
 }
 .anc-home-test a {
   text-decoration: none;
-  color: #f0eeee;
-  font-size: 1.1rem;
+  color: #523737;
+  font-size: 1.2rem;
+  padding: 10px;
 }
 
 /* text styling */
@@ -58,8 +60,7 @@
   position: relative;
   color: #030303;
   text-align: center;
-  max-width: 800px;
-  padding: 0 20px;
+  padding: 10px;
   animation: fadeUp 1s ease-out;
 }
 
