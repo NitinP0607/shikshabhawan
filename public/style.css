@@ -762,10 +762,10 @@ hr {
   transition: transform 0.2s ease-in-out;
 }
 .testinomials img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
   cursor: pointer;
 }
-.testinomials::after {
+.testinomials img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -777,7 +777,7 @@ hr {
   transition: opacity 0.4s ease;
 }
 /* Show on hover */
-.testinomials:hover::after {
+.testinomials img:hover::after {
   opacity: 1;
 }
 
