@@ -762,6 +762,7 @@ hr {
 .testinomials img:hover {
   transform: scale(1.1);
   cursor: pointer;
+  background: transparent linear-gradient(to right, #007bff, #00c6ff);
 }
 .testinomials p {
   font-size: 20px;
