@@ -808,19 +808,21 @@ hr {
   font-weight: 500;
 }
 .connection {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
  
 }
 .testinomials {
-  width: 100%;
+  width: 350;
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
 .testinomials img {
-  width: 350px;
+  width: 300px;
   display: block;
   border-radius: 10%;
   height: 300px;
