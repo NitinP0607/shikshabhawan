@@ -571,20 +571,8 @@ hr {
 .enquiry a:hover {
   background: #b3b6b9;
 }
-/* Mobile first (default styles) */
 
-/* Small devices (≥480px) */
-/* @media screen and (max-width: 480px) {
-  .home-bottom-enquiries {
-    gap: 20px;
-    padding: 10px 0px;
-  }
-  .enquiry {
-    width: 100%;
-  }
-} */
 
-/* Tablets (≥768px) */
 @media screen and (max-width: 480px) {
   .home-bottom-enquiries {
     flex-direction: column;
@@ -873,9 +861,9 @@ hr {
 .owner-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 30px;
-  max-width: 1000px;
+  padding: 10px 40px;
   margin: 0 auto;
   flex-wrap: wrap; /* allows stacking on smaller screens */
 }
@@ -905,8 +893,7 @@ hr {
 }
 
 .img-owner img {
-  width: 250px;
-  width: 100%;
+  width: 300px;
   height: auto;
   border-radius: 50%;
   border: none;
