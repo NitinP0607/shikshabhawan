@@ -11,7 +11,7 @@
 .testimonials-hero {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 300px;
   background: url("/assets/students+teacher.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
