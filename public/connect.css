@@ -14,9 +14,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  caret-color: transparent;
-  user-select: none;
-  pointer-events: none;
+ 
 }
 
 body {
