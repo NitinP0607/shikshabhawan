@@ -1,13 +1,34 @@
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+function autoIncrement(id, end, interval) {
+  const element = document.getElementById(id);
+  let count = 0;
+  element.innerText = count;
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
+  setInterval(() => {
+    count += 1;
 
-  document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
+    if (count > end) {
+      count = 0; // reset the counter when it exceeds 1000
+    }
+
+    element.innerText = count;
+  }, interval);
+}
+
+window.onload = () => {
+  autoIncrement("numbers-teacher", 250, 200); // Adjust interval speed here
+  autoIncrement("numbers-students", 2050, 100); // Adjust interval speed here
+};
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
   });
 });
 const quotes = [
@@ -32,11 +53,14 @@ function changeQuote() {
 
 setInterval(changeQuote, 4000);
 
-
 function showForm(type) {
   // Hide all forms
-  document.querySelectorAll(".form").forEach(f => f.classList.remove("active"));
-  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  document
+    .querySelectorAll(".form")
+    .forEach((f) => f.classList.remove("active"));
+  document
+    .querySelectorAll(".tab-btn")
+    .forEach((b) => b.classList.remove("active"));
 
   // Show selected form
   document.getElementById(type + "-form").classList.add("active");
@@ -48,19 +72,19 @@ function showForm(type) {
 // Pop-up form
 
 window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-      document.getElementById("join-modal").style.display = "flex";
-    }, 2000);
-  });
+  setTimeout(() => {
+    document.getElementById("join-modal").style.display = "flex";
+  }, 2000);
+});
 
-  // Close modal on X click
-  document.getElementById("close-modal").addEventListener("click", () => {
-    document.getElementById("join-modal").style.display = "none";
-  });
+// Close modal on X click
+document.getElementById("close-modal").addEventListener("click", () => {
+  document.getElementById("join-modal").style.display = "none";
+});
 
-  // Optional: handle form submission
-  document.getElementById("join-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Thank you for joining!");
-    document.getElementById("join-modal").style.display = "none";
-  });
+// Optional: handle form submission
+document.getElementById("join-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Thank you for joining!");
+  document.getElementById("join-modal").style.display = "none";
+});
