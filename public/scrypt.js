@@ -121,3 +121,28 @@ document.getElementById("close-modal").addEventListener("click", () => {
   //   }
   // });
 
+  const form = document.getElementById("join-form");
+  const responseMessage = document.getElementById("success-message");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const res = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (res.ok) {
+      responseMessage.innerText = "Thanks! Your form has been submitted.";
+      alert("Thanks! Your form has been submitted.");
+      document.getElementById("join-modal").style.display = "none";
+      form.reset();
+    } else {
+      responseMessage.innerText = "Oops! There was a problem submitting your form.";
+    }
+  });
