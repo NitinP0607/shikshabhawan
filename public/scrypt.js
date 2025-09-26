@@ -83,8 +83,41 @@ document.getElementById("close-modal").addEventListener("click", () => {
 });
 
 // Optional: handle form submission
-document.getElementById("join-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Thank you for joining!");
+
   document.getElementById("join-modal").style.display = "none";
-});
+
+// Join form handling on Home page
+  // const form = document.getElementById('join-form');
+
+  // form.addEventListener('submit', async (e) => {
+  //   e.preventDefault(); // Prevent default page reload
+
+  //   // Collect form data
+  //   const name = form.elements['name'].value;
+  //   const email = form.elements['email'].value;
+  //   const message = form.elements['message'].value;
+
+  //   // Send data to backend
+  //   try {
+  //     const response = await fetch('http://localhost:8000/api/submit-form', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({ name, email, message }),
+  //     });
+
+  //     const result = await response.json();
+
+  //     if (result.success) {
+  //       alert('Form submitted! You will be contacted soon.');
+  //       form.reset(); // Clear the form
+  //     } else {
+  //       alert('Something went wrong. Please try again.');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //     alert('Failed to submit form.');
+  //   }
+  // });
+

@@ -48,10 +48,10 @@
   <div class="modal-content">
     <span class="close-btn" id="close-modal">&times;</span>
     <h2>Join Shiksha Bhawan</h2>
-    <form id="join-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Why do you want to join?" required></textarea>
+    <form id="join-form" method="post" action="https://formspree.io/f/mzzjzydd">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea rows="4" name="message" placeholder="Why do you want to join?" required></textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
